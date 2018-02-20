@@ -6,9 +6,10 @@ Adapted from source code at https://github.com/StephenGrider/EthereumCasts and h
 Install to your computer:
 * [Node.js (LTS is fine)](https://nodejs.org/en/)
 * [Yarn](https://yarnpkg.com/en/docs/install)
+
 Install to your browser:
 * [Metamask](https://chrome.google.com/webstore/search/metamask)
-..*After installing, create an account and save the mnemonic phrase for later
+    *After installing, create an account and save the mnemonic phrase for later
 ### Links
 #### Development
 * [Remix - Solidity Browser IDE](https://remix.ethereum.org/)
@@ -25,7 +26,7 @@ Install to your browser:
 ## Steps to Run
 1. Run node compile.js
 2. Modify ethereum/deploy.js
-..*Replace the <> with the MetaMask mnemonic phrase that you saved earlier
+    *Replace the <> with the MetaMask mnemonic phrase that you saved earlier
 ```javascript
 const provider = new HDWalletProvider( 
     '<MetaMask Mnemonic phrase>', //mnemonic generates many accounts
@@ -33,9 +34,9 @@ const provider = new HDWalletProvider(
 );
 ```
 3. Run node deploy.js
-..*Save address where contract is deployed
+    *Save address where contract is deployed
 4. Modify ethereum/factory.js
-..*Replace the <> with the saved address from previous step
+    *Replace the <> with the saved address from previous step
 ```javascript
 const instance = new web3.eth.Contract(
     JSON.parse(CampaignFactory.interface),
