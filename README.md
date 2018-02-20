@@ -40,7 +40,10 @@ const provider = new HDWalletProvider(
     'https://rinkeby.infura.io/HflqAGsVLFBf2cFBMYoq' //access key
 );
 ```
-4. Run node deploy.js  
+4. Deploy the contract to the Rinkleby Network
+```shell
+node compile.js
+```
     * Save address where contract is deployed
 5. Modify ethereum/factory.js  
     * Replace the <> with the saved address from previous step
