@@ -41,10 +41,10 @@ const provider = new HDWalletProvider(
 );
 ```
 4. Deploy the contract to the Rinkleby Network
+   * Save address where contract is deployed
 ```shell
 node compile.js
-```
-    * Save address where contract is deployed
+```   
 5. Modify ethereum/factory.js  
     * Replace the <> with the saved address from previous step
 ```javascript
