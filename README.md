@@ -41,7 +41,7 @@ const provider = new HDWalletProvider(
 );
 ```
 4. Deploy the contract to the Rinkleby Network
-   * Save address where contract is deployed
+   * Make sure to save address where contract is deployed. This should be logged to the console
 ```shell
 node compile.js
 ```   
