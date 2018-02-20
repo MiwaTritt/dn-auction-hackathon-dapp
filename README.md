@@ -1,6 +1,6 @@
 # Sample DApp for a Campaign / Kickstarter
 
-# Adapted from source code at https://github.com/StephenGrider/EthereumCasts and https://www.udemy.com/ethereum-and-solidity-the-complete-developers-guide
+Adapted from source code at https://github.com/StephenGrider/EthereumCasts and https://www.udemy.com/ethereum-and-solidity-the-complete-developers-guide
 
 ## Steps
 
