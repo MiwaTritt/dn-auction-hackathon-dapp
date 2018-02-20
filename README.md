@@ -8,7 +8,7 @@ Install to your computer:
 * [Yarn](https://yarnpkg.com/en/docs/install)
 
 Install to your browser:
-* [Metamask](https://chrome.google.com/webstore/search/metamask)
+* [Metamask](https://chrome.google.com/webstore/search/metamask)  
     *After installing, create an account and save the mnemonic phrase for later
 ### Links
 #### Development
@@ -25,7 +25,7 @@ Install to your browser:
 
 ## Steps to Run
 1. Run node compile.js
-2. Modify ethereum/deploy.js
+2. Modify ethereum/deploy.js  
     *Replace the <> with the MetaMask mnemonic phrase that you saved earlier
 ```javascript
 const provider = new HDWalletProvider( 
@@ -33,9 +33,9 @@ const provider = new HDWalletProvider(
     'https://rinkeby.infura.io/HflqAGsVLFBf2cFBMYoq' //access key
 );
 ```
-3. Run node deploy.js
+3. Run node deploy.js  
     *Save address where contract is deployed
-4. Modify ethereum/factory.js
+4. Modify ethereum/factory.js  
     *Replace the <> with the saved address from previous step
 ```javascript
 const instance = new web3.eth.Contract(
