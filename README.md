@@ -24,8 +24,12 @@ Install to your browser:
 * [Solidity](https://solidity.readthedocs.io/en/develop/)
 
 ## Steps to Run
-1. Run node compile.js
-2. Modify ethereum/deploy.js  
+1. Install dependencies with yarn
+```shell
+yarn install
+```
+2. Run node compile.js
+3. Modify ethereum/deploy.js  
     * Replace the <> with the MetaMask mnemonic phrase that you saved earlier
 ```javascript
 const provider = new HDWalletProvider( 
@@ -33,9 +37,9 @@ const provider = new HDWalletProvider(
     'https://rinkeby.infura.io/HflqAGsVLFBf2cFBMYoq' //access key
 );
 ```
-3. Run node deploy.js  
+4. Run node deploy.js  
     * Save address where contract is deployed
-4. Modify ethereum/factory.js  
+5. Modify ethereum/factory.js  
     * Replace the <> with the saved address from previous step
 ```javascript
 const instance = new web3.eth.Contract(
