@@ -28,7 +28,10 @@ Install to your browser:
 ```shell
 yarn install
 ```
-2. Run node compile.js
+2. Compile the contracts
+```shell
+node compile.js
+```
 3. Modify ethereum/deploy.js  
     * Replace the <> with the MetaMask mnemonic phrase that you saved earlier
 ```javascript
