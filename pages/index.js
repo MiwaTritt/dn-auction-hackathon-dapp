@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Card } from 'semantic-ui-react';
+import { Card, Button } from 'semantic-ui-react';
 
-import Header from '../components/header'
+import Layout from '../components/Layout'
 import factory from '../ethereum/factory';
 
 class CampaignIndex extends Component {
@@ -24,10 +24,15 @@ class CampaignIndex extends Component {
 
     render() {
         return (
-            <div>
-                <Header/>
-                <h1>{ this.renderCampaigns() }</h1>   
-            </div>
+            <Layout>
+                <h3>Open Campaigns</h3>
+                { this.renderCampaigns() }
+                <Button 
+                    content="Create Campaign"
+                    icon="add circle"
+                    primary
+                />
+            </Layout>
         );     
     }
 }
