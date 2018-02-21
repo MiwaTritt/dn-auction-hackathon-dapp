@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { Card } from 'semantic-ui-react';
+
+import Header from '../components/header'
 import factory from '../ethereum/factory';
 
 class CampaignIndex extends Component {
@@ -7,8 +10,25 @@ class CampaignIndex extends Component {
         return { campaigns };
     }
 
+    renderCampaigns() {
+        const campaigns = this.props.campaigns.map(address => {
+            return {
+                header: address,
+                description: <a>View Campaign</a>,
+                fluid: true
+            }
+        });
+
+        return <Card.Group items={campaigns} />;
+    }
+
     render() {
-        return <h1>{ this.props.campaigns[0] }</h1>        
+        return (
+            <div>
+                <Header/>
+                <h1>{ this.renderCampaigns() }</h1>   
+            </div>
+        );     
     }
 }
 
