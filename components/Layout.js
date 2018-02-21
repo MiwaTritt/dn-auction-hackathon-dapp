@@ -1,10 +1,13 @@
-import React from "react";
-import Head from "next/head";
+import React from 'react';
+import Head from 'next/head';
+import { Container } from 'semantic-ui-react';
 import "semantic-ui-css/semantic.min.css";
+
+import Header from './Header';
 
 export default props => {
   return (
-    <div>
+    <Container>
       <Head>
         <title>Kickstarter DApp</title>
         <link
@@ -13,8 +16,8 @@ export default props => {
         />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
+      <Header/>
       {props.children}
-      <div>Footer</div>
-    </div>
+    </Container>
   );
 };
