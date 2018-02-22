@@ -1,9 +1,9 @@
-import React from 'react';
-import Head from 'next/head';
-import { Container } from 'semantic-ui-react';
+import React from "react";
+import Head from "next/head";
+import { Container } from "semantic-ui-react";
 import "semantic-ui-css/semantic.min.css";
 
-import Header from './Header';
+import Header from "./Header";
 
 export default props => {
   return (
@@ -16,7 +16,7 @@ export default props => {
         />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <Header/>
+      <Header />
       {props.children}
     </Container>
   );
